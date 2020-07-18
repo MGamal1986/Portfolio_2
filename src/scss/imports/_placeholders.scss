@@ -8,24 +8,21 @@
     padding: 1rem 0;
     background: #fff;
     box-shadow: 0 0 5px 1px rgba(122, 88, 88, 0.18);
-    width: 80%;
+    overflow: hidden;
     height: 80vh;
+    width: 80%;
     top: 50%;
     left: 141%;
     transform: translate(-50%,-50%);
-    // @include easeInOut;
-    transition: all 0.5s linear;
+    transition: left 0.5s linear;
     &.slide{
         left: 50%;
         transition-delay: 1s;
         z-index: 10;
+        width: 80%;
     }
     transition-delay: 0.2s;
     border-radius: 15px;
-    @keyframes sliding {
-        0% {left: 48%}
-        100% {left: 100%}
-    }
 }
 
 // animation class
@@ -46,5 +43,5 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.09);
-    padding: 20px;
+    padding: 10px;
 }

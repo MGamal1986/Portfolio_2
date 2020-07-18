@@ -9,7 +9,6 @@
 // medium sreen from 768px to 992px (ex: labtop)
 @include mQ_md{
     .home-section{
-        width: 70%;
         .title-profile{
             .main-title{
                 font-size: 1.4rem;
@@ -31,14 +30,11 @@
     // buttons section styles
     .btn-sections{
         &.small-screen{
-            left: -70px;
+            left: -73px;
         }
     }
     // home sections styles
     .home-section{
-        .image-profile{
-            margin-bottom: 1.5rem;
-        }
         .add-padding{
             padding: 2rem 5rem;
         }
