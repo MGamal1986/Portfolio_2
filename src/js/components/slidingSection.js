@@ -15,8 +15,6 @@ export class Sliding{
             // remove class slide from all main sections
             this.block_siblings.forEach(element => {
                 element.classList.remove(this.class);
-                
-                // element.classList.remove('active');
             });
             // remove class slide form all button sections
             this.element_siblings.forEach((element)=>{
@@ -24,11 +22,6 @@ export class Sliding{
             })
             this.block.classList.toggle(this.class);
             this.element.classList.toggle(this.class);
-            // if(!this.block.classList.contains('slide')){
-            //     setTimeout(()=>{
-            //         element.style.cssText = 'width:0'
-            //     },1000)
-            // }   
         })
     }
 }
