@@ -1,0 +1,43 @@
+// import colors variables
+@import './imports/colors';
+
+// import mixins
+@import './imports/mixins';
+
+// import placholder selectors
+@import './imports/placeholders';
+
+
+// import Roboto font-family
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+//  import ubuntu font-fmily
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+// main body styles
+body{
+    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+    // import layout styles
+    @import './imports/layout';
+    // import sections styles
+    @import './imports/sections';
+
+    // import home section styles
+    @import './imports/home';
+
+    // import about section styles
+    @import './imports/about';
+
+    // import home section styles
+    @import './imports/portfolio';
+
+    // import about section styles
+    @import './imports/contact';
+
+    // import responsive styles
+    @import './imports/responsive';
+}

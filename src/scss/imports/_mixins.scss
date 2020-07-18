@@ -1,0 +1,54 @@
+/*********************************************
+****** Mixins for Most repeated styles *******
+*********************************************/
+
+// transition Mixins 0.5s
+@mixin easeInOut {
+    transition: all 1s linear;
+}
+// transition Mixins 0.3s
+@mixin easeInOut3s {
+    transition: all 0.3s linear;
+}
+// transition Mixins 0.2s
+@mixin easeInOut2s {
+    transition: all 0.2s linear;
+}
+/*********************************************
+****** Mixins for Media Query********* *******
+*********************************************/
+@mixin mQ_450{
+    @media screen and (max-width: 450px) {
+        @content;
+    }
+}
+@mixin mQ_500{
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin mQ_xs {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+@mixin mQ_sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mQ_md {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin mQ_lg {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin mQ_xl {
+    @media screen and (min-width: 1201px) {
+        @content;
+    }
+}

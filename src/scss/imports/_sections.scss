@@ -1,0 +1,87 @@
+.btn-sections{
+    position: fixed;
+    left: 0;
+    z-index: 15;
+    height: 100vh;
+    width: 70px;
+    background: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 1px 0 5px 0px rgba(0,0,0,0.2); 
+    .main{
+        position: absolute;
+        top: 20%;
+        left: 100%;
+        padding: 0.3rem 0.75rem;
+        font-size: 1.75rem;
+        color: $bgBtnColor;
+        background: #fff;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.14);
+        cursor: pointer;
+        @include easeInOut3s;
+        &.up{
+            top: 2%;
+        }
+    }
+    .sections{
+        position: relative;
+        margin-bottom: 1rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        padding: 0.5rem;
+        border-radius: 10px;
+        user-select: none;
+        background: transparent;
+        color: $bgBtnColor;
+        text-transform: capitalize;
+        font-weight: 600;
+        cursor: pointer;
+        @include easeInOut2s;
+        &:hover{
+            color: #fff;
+            background: $bgBtnColor;
+        }
+        &:hover:before{
+            visibility: visible;
+            opacity: 1;
+        }
+        &.slide{
+            color: #fff;
+            background: $bgBtnColor;
+        }
+        i{
+            font-size: 1.75rem;
+        }
+        &:not(.last):after{
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background: rgba($bgBtnColor,0.5);
+            left: 0;
+            top: 118%;
+        }
+        &:before{
+            content: attr(data-name);
+            position: absolute;
+            top: 50%;
+            right: -84px;
+            display: inline-block;
+            background: #ff6542;
+            color: #fff;
+            padding: 0.25rem 0;
+            border-radius: 15px;
+            font-size: 0.7rem;
+            transform: translateY(-50%);
+            width: 80px;
+            text-align: center;
+            @include easeInOut2s;
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+    }
+    @include easeInOut3s;
+}
