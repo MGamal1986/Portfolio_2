@@ -1,12 +1,28 @@
 /*************************************
 ******** Colors variable  ************
 **************************************/
-$bgColor: #dfe6e9;
-$bgHomeColor: #0984e3;
-$bgSectionsColor: #0984e3;
-$bgSectionColorHover: #48dbfb;
+
+// main title colors
+$mainTitleColor: #273c75;
+
+/****************************
+*** light theme colors ******
+*****************************/
+// forground colors
 $bgLayoutColor: #ff6542;
 $bgBtnColor: #ff6542;
-$mainTitleColor: #273c75;
-$bgIconColor: #ffe3e0;
+// background colors
 $bgLayoutColor2: #EFF1F3;
+
+
+/****************************
+*** dark theme colors *******
+*****************************/
+// forground colors
+
+// background colors
+$bgLayoutColorDark: #2e294e;
+
+
+
+

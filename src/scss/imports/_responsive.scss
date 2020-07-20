@@ -38,6 +38,11 @@
         .add-padding{
             padding: 2rem 5rem;
         }
+        .title-profile{
+            &.boxy{
+                padding: 10px;
+            }
+        }
     }
 }
 // Extra Small screen from 500px to 576px (ex: large smart phone )

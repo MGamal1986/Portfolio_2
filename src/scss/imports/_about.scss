@@ -1,4 +1,32 @@
 .about-section{
     @extend .main_section;
-   
+    padding: 2rem;
+   .about-content{
+       .about-title{
+           color: $mainTitleColor;
+           text-transform: capitalize;
+           font-weight: 600;
+       }
+       .slogan{
+           font-size: 0.8rem;
+           color: $mainTitleColor;
+       }
+       .about-description{
+            color: rgba($mainTitleColor,0.5);
+       }
+       .public-info{
+           .title-info{
+               color: $mainTitleColor;
+               text-transform: capitalize;
+           }
+           .info{
+               width: 100%;
+               text-transform: capitalize;
+               color: $mainTitleColor;
+               td{
+                   width: 50%;
+               }
+           }
+       }
+   }
 }
