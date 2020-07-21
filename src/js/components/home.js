@@ -12,8 +12,6 @@ const mainSections = document.querySelectorAll('.section');
 // select all sections buttons
 const sectionsBtn = document.querySelectorAll('.sections');
 
-// select all lines between sections buttons
-const lines = document.querySelectorAll('.btn-sections .line');
 
 // select main title element
 const mainTitle = document.querySelector('.home-section .main-title');
@@ -35,11 +33,20 @@ export default function Home(){
 
     // initiate a new instance of typed component with the predefined options
     const typed = new Typed(mainTitle, options);
-
+    // get screen width
+    let screenSize = window.innerWidth; 
+    // console.log(screenSize);
     // create instance of sliding class
-    let homeSider = new Sliding(homeBtn,homeSection,'slide',mainSections,sectionsBtn,lines);
+    if(screenSize <= 768){
+        let homeSider = new Sliding(homeBtn,homeSection,'slide',mainSections,sectionsBtn,{scroll:true});
+        // call slide function
+        homeSider.slide();
+    }else{
+        let homeSider = new Sliding(homeBtn,homeSection,'slide',mainSections,sectionsBtn);
+        // call slide function
+        homeSider.slide();
+    }
 
-    // call slide function
-    homeSider.slide();
+    
 
 }

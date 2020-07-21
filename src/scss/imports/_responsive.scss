@@ -29,6 +29,10 @@
 @include mQ_sm{
     // buttons section styles
     .btn-sections{
+        justify-content: start;
+        .home{
+            margin-top: 2rem;
+        }
         &.small-screen{
             left: -73px;
         }

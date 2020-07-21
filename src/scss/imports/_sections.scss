@@ -7,7 +7,10 @@
     background: #fff;
     border-right: 1px solid rgba(0, 0, 0, 0.07);
     box-shadow: 1px 0 5px 0px rgba(0,0,0,0.2); 
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     .main{
         position: absolute;
         top: 20%;
@@ -39,11 +42,15 @@
         font-weight: 600;
         cursor: pointer;
         @include easeInOut2s;
-        &:hover{
+        &:hover,
+        &:active,
+        &:focus{
             color: #fff;
             background: $bgBtnColor;
         }
-        &:hover:before{
+        &:hover:before,
+        &:active:before,
+        &:focus:before{
             visibility: visible;
             opacity: 1;
         }

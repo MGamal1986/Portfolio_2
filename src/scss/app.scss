@@ -21,6 +21,10 @@ body{
     font-family: 'Roboto', sans-serif;
     position: relative;
     overflow: hidden;
+    @include mQ_sm{
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
     // import layout styles
     @import './imports/layout';
     // import sections styles

@@ -12,18 +12,24 @@ const mainSections = document.querySelectorAll('.section');
 // select all sections buttons
 const sectionsBtn = document.querySelectorAll('.sections');
 
-// select all lines between sections buttons
-const lines = document.querySelectorAll('.btn-sections .line');
 
 
 
 
 // export main home function
 export default function About(){
-    // create instance of sliding class
-    let aboutSider = new Sliding(aboutBtn,aboutSection,'slide',mainSections,sectionsBtn,lines);
+    let screenSize = window.innerWidth; 
+    if(screenSize <= 768){
+        // create instance of sliding class
+        let aboutSider = new Sliding(aboutBtn,aboutSection,'slide',mainSections,sectionsBtn,{scroll:true});
+        // call slide function
+        aboutSider.slide();
 
-    // call slide function
-    aboutSider.slide();
+    }else{
+        // create instance of sliding class
+        let aboutSider = new Sliding(aboutBtn,aboutSection,'slide',mainSections,sectionsBtn);
+        // call slide function
+        aboutSider.slide();
+    }
 
 }

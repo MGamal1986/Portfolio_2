@@ -29,7 +29,7 @@
         }
     }
     .title-profile{
-        @extend .boxy;
+        // @extend .boxy;
         .main-title{
             margin-bottom: 1rem;
             position: relative;
@@ -51,9 +51,9 @@
         }
         .prief{
             text-align: left;
-            color: rgba($mainTitleColor,0.5);
+            @extend .p;
             font-size: 1.2rem;
-            line-height: 1.1;
+            line-height: 1.4;
             margin: 0;
         }
     }

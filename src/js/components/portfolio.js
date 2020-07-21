@@ -19,10 +19,20 @@ const lines = document.querySelectorAll('.btn-sections .line');
 
 // export main home function
 export default function Home(){
-    // create instance of sliding class
-    let portfolioSider = new Sliding(portfolioBtn,portfolioSection,'slide',mainSections,sectionsBtn,lines);
+    let screenSize = window.innerWidth;
+    if(screenSize <= 768){
+        // create instance of sliding class
+        let portfolioSider = new Sliding(portfolioBtn,portfolioSection,'slide',mainSections,sectionsBtn,{scroll:true});
+    
+        // call slide function
+        portfolioSider.slide();
 
-    // call slide function
-    portfolioSider.slide();
+    }else{
+        // create instance of sliding class
+        let portfolioSider = new Sliding(portfolioBtn,portfolioSection,'slide',mainSections,sectionsBtn);
+    
+        // call slide function
+        portfolioSider.slide();
+    }
 
 }
