@@ -1,10 +1,12 @@
-.home-section{
+.home-section {
     // main home section styles
     @extend .main_section;
+
     // image profile styles
-    .image-profile{
+    .image-profile {
         position: relative;
-        &:before{
+
+        &:before {
             content: '';
             display: block;
             width: 100%;
@@ -16,28 +18,33 @@
             position: absolute;
             z-index: -1;
         }
-        img{
+
+        img {
             border-radius: 50%;
             background: #fff;
             border: 1px solid rgba(0, 0, 0, 0.08);
             box-shadow: -1px 1px 18px 0 rgba(0, 0, 0, 0.17);
         }
     }
-    &.slide{
-        .title-profile{
+
+    &.slide {
+        .title-profile {
             @extend .animate;
         }
     }
-    .title-profile{
+
+    .title-profile {
+
         // @extend .boxy;
-        .main-title{
+        .main-title {
             margin-bottom: 1rem;
             position: relative;
             color: $mainTitleColor;
             font-size: 2rem;
             font-family: 'Ubuntu', sans-serif;
             height: 39px;
-            &:after{
+
+            &:after {
                 content: '';
                 position: absolute;
                 display: inline-block;
@@ -49,7 +56,8 @@
                 height: 5px;
             }
         }
-        .prief{
+
+        .prief {
             text-align: left;
             @extend .p;
             font-size: 1.2rem;

@@ -1,5 +1,7 @@
 // import sliding section component
-import {Sliding} from './slidingSection';
+import {
+    Sliding
+} from './slidingSection';
 
 // sliding for home section
 // select home elements
@@ -18,19 +20,21 @@ const lines = document.querySelectorAll('.btn-sections .line');
 
 
 // export main home function
-export default function Home(){
+export default function Home() {
     let screenSize = window.innerWidth;
-    if(screenSize <= 768){
+    if (screenSize <= 768) {
         // create instance of sliding class
-        let portfolioSider = new Sliding(portfolioBtn,portfolioSection,'slide',mainSections,sectionsBtn,{scroll:true});
-    
+        let portfolioSider = new Sliding(portfolioBtn, portfolioSection, 'slide', mainSections, sectionsBtn, {
+            scroll: true
+        });
+
         // call slide function
         portfolioSider.slide();
 
-    }else{
+    } else {
         // create instance of sliding class
-        let portfolioSider = new Sliding(portfolioBtn,portfolioSection,'slide',mainSections,sectionsBtn);
-    
+        let portfolioSider = new Sliding(portfolioBtn, portfolioSection, 'slide', mainSections, sectionsBtn);
+
         // call slide function
         portfolioSider.slide();
     }

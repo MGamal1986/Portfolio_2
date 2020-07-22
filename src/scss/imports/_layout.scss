@@ -1,14 +1,16 @@
-.layout{
+.layout {
     position: fixed;
     height: 100vh;
     width: 100%;
     z-index: -1;
     background: $bgLayoutColor2;
     @include easeInOut3s;
-    &.dark{
-        background: $bgLayoutColorDark; 
+
+    &.dark {
+        background: $bgLayoutColorDark;
     }
-    .box{
+
+    .box {
         position: absolute;
         display: block;
         width: 50%;

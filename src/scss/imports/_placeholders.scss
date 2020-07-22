@@ -3,7 +3,7 @@
 ****************************************/
 
 // common styles for main sections
-.main_section{
+.main_section {
     position: absolute;
     z-index: 5;
     padding: 1rem 0;
@@ -15,20 +15,23 @@
     opacity: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: opacity 0.5s linear;
-    &.slide{
+
+    &.slide {
         visibility: visible;
         opacity: 1;
         z-index: 10;
     }
+
     border-radius: 15px;
+
     // Styles in small screen (tablet, smart phone, ..)
-    @include mQ_sm{
+    @include mQ_sm {
         top: 5%;
         position: relative;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         width: 80%;
         height: auto;
         opacity: 1;
@@ -37,26 +40,42 @@
 }
 
 // animation classes 
-.animate{
+.animate {
     animation: scaling 0.5s linear 0.5s 1;
-    @keyframes scaling{
-        0%{transform:scale(0.8)}
-        25%{transform:scale(0.85)}
-        50%{transform:scale(0.9)}
-        75%{transform:scale(0.95)}
-        100%{transform:scale(1)}
+
+    @keyframes scaling {
+        0% {
+            transform: scale(0.8)
+        }
+
+        25% {
+            transform: scale(0.85)
+        }
+
+        50% {
+            transform: scale(0.9)
+        }
+
+        75% {
+            transform: scale(0.95)
+        }
+
+        100% {
+            transform: scale(1)
+        }
     }
 }
 
 // boxy class
-.boxy{
+.boxy {
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.09);
     padding: 20px;
 }
+
 // line with moving dots
-.line{
+.line {
     display: inline-block;
     position: absolute;
     bottom: -1px;
@@ -64,29 +83,57 @@
     width: 100%;
     height: 3px;
     background: $bgBtnColor;
-    .dot{
+
+    .dot {
         position: absolute;
         top: 0;
-        animation: moving 2s linear  infinite;
+        animation: moving 2s linear infinite;
         width: 10px;
         height: 100%;
         border: 2px dashed #fff;
-        @keyframes moving{
-            0%{left: 0}
-            12%{left: 12%}
-            25%{left: 25%}
-            38%{left: 38%}
-            50%{left: 50%}
-            62%{left: 62%}
-            75%{left: 75%}
-            88%{left: 88%}
-            100%{left: 100%}
+
+        @keyframes moving {
+            0% {
+                left: 0
+            }
+
+            12% {
+                left: 12%
+            }
+
+            25% {
+                left: 25%
+            }
+
+            38% {
+                left: 38%
+            }
+
+            50% {
+                left: 50%
+            }
+
+            62% {
+                left: 62%
+            }
+
+            75% {
+                left: 75%
+            }
+
+            88% {
+                left: 88%
+            }
+
+            100% {
+                left: 100%
+            }
         }
 
     }
 }
 
 // common paragraph styles
-.p{
-    color: rgba($mainTitleColor,0.7);
+.p {
+    color: rgba($mainTitleColor, 0.7);
 }

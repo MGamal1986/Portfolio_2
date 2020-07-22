@@ -35,10 +35,3 @@ Contact();
 // import portfolio component
 import Portfolio from './components/portfolio';
 Portfolio();
-
-
-
-
-
-
-

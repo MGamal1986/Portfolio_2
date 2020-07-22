@@ -1,80 +1,94 @@
-.about-section{
+.about-section {
     @extend .main_section;
     overflow-y: visible;
     padding: 2rem;
-   .about-content{
-       .about-title{
-           font-size: 0; // clear white spaces between inline elements
-           color: $mainTitleColor;
-           text-transform: uppercase;
-           font-weight: 600;
-           margin:0;
-           i{
-               font-size: 1.5rem;
+
+    .about-content {
+        .about-title {
+            font-size: 0; // clear white spaces between inline elements
+            color: $mainTitleColor;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 0;
+
+            i {
+                font-size: 1.5rem;
                 margin-right: 0.5rem;
-           }
-           span{
-               font-size: 2rem;
-               position: relative;
-               .underline{
-                   @extend .line;
-               }
-           }
-           
-       }
-       .slogan{
+            }
+
+            span {
+                font-size: 2rem;
+                position: relative;
+
+                .underline {
+                    @extend .line;
+                }
+            }
+
+        }
+
+        .slogan {
             margin: 0;
             font-size: 1rem;
-            color: rgba($mainTitleColor,0.7);
+            color: rgba($mainTitleColor, 0.7);
             font-weight: 600;
             text-transform: uppercase;
-           .line-space{
+
+            .line-space {
                 width: 39px;
                 height: 2px;
-                background:rgba($bgBtnColor,0.5);
+                background: rgba($bgBtnColor, 0.5);
                 margin-top: 0.9rem;
                 margin-right: 0.25rem;
             }
         }
-       .about-description{
+
+        .about-description {
             width: 70%;
             font-weight: 400;
             @extend .p;
-            margin:0;
-       }
-       .public-info{
-           .title-info{
-               color: $mainTitleColor;
-               font-size: 1.3rem;
-               text-transform: capitalize;
-               margin:0;
-           }
-           .info{
-               width: 100%;
-               text-transform: capitalize;
-               color: rgba($mainTitleColor,0.67);
-               font-weight: 400;
-               td{
-                   width: 50%;
-               }
-           }
-       }    
-       .exp{
-           .title-exp{
+            margin: 0;
+        }
+
+        .public-info {
+            .title-info {
                 color: $mainTitleColor;
                 font-size: 1.3rem;
                 text-transform: capitalize;
-                margin:0;
-           }
-           .list{
-               li{
-                   display: inline-block;
-                   color: rgba($mainTitleColor,0.67);
-                   margin-right: 2rem;
-                   &:last-child{
-                       margin-right: 0;
-                   }
-                   &:before{
+                margin: 0;
+            }
+
+            .info {
+                width: 100%;
+                text-transform: capitalize;
+                color: rgba($mainTitleColor, 0.67);
+                font-weight: 400;
+
+                td {
+                    width: 50%;
+                }
+            }
+        }
+
+        .exp {
+            .title-exp {
+                color: $mainTitleColor;
+                font-size: 1.3rem;
+                text-transform: capitalize;
+                margin: 0;
+            }
+
+            .list {
+                li {
+                    display: inline-block;
+                    color: rgba($mainTitleColor, 0.67);
+                    margin-right: 2rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:before {
                         content: "\eed7";
                         font-family: IcoFont !important;
                         font-style: normal;
@@ -87,14 +101,16 @@
                         line-height: 1;
                         margin-right: 0.25rem;
                         color: $bgBtnColor;
-                   }
-               }
-               margin: 0;
-           }
-       }
-    }   
-    &.slide{
-        .about-content{
+                    }
+                }
+
+                margin: 0;
+            }
+        }
+    }
+
+    &.slide {
+        .about-content {
             @extend .animate;
         }
     }
