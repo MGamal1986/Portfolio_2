@@ -14,7 +14,8 @@ const mainSections = document.querySelectorAll('.section');
 // select all sections buttons
 const sectionsBtn = document.querySelectorAll('.sections');
 
-
+// import screen size funcion
+// import ScreenWidth from './screenWidth';
 
 
 // export main home function

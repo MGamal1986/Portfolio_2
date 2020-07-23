@@ -34,8 +34,9 @@ export class Sliding {
                     element.classList.remove(this.class);
                 })
                 this.element.classList.toggle(this.class);
+                this.block.classList.toggle(this.class);
                 window.scrollTo({
-                    top: this.block.offsetTop,
+                    top: `${this.block.offsetTop - 40}`,
                     left: 0,
                     behavior: 'smooth'
                 })

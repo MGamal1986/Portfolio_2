@@ -6,7 +6,7 @@
 .main_section {
     position: absolute;
     z-index: 5;
-    padding: 1rem 0;
+    padding: 2rem 0;
     background: #fff;
     box-shadow: 0 0 5px 1px rgba(122, 88, 88, 0.18);
     overflow: hidden;
@@ -34,6 +34,7 @@
         transform: translate(-50%, 0);
         width: 80%;
         height: auto;
+        // height: 80vh;
         opacity: 1;
         margin-bottom: 5rem;
     }

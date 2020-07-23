@@ -1,7 +1,6 @@
 .about-section {
     @extend .main_section;
     overflow-y: visible;
-    padding: 2rem;
 
     .about-content {
         .about-title {
@@ -59,13 +58,23 @@
             }
 
             .info {
-                width: 100%;
                 text-transform: capitalize;
                 color: rgba($mainTitleColor, 0.67);
                 font-weight: 400;
+                margin: 0;
 
-                td {
-                    width: 50%;
+                li {
+                    margin-bottom: 0.5rem;
+
+                    &.last {
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        margin-right: 0.25rem;
+                        width: 90px;
+                        display: inline-block;
+                    }
                 }
             }
         }
@@ -79,8 +88,12 @@
             }
 
             .list {
+                display: flex;
+                justify-content: flex-start;
+                flex-flow: row wrap;
+
                 li {
-                    display: inline-block;
+                    // display: inline-block;
                     color: rgba($mainTitleColor, 0.67);
                     margin-right: 2rem;
 

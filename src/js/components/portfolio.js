@@ -17,7 +17,8 @@ const sectionsBtn = document.querySelectorAll('.sections');
 // select all lines between sections buttons
 const lines = document.querySelectorAll('.btn-sections .line');
 
-
+// import screen size funcion
+// import ScreenWidth from './screenWidth';
 
 // export main home function
 export default function Home() {
