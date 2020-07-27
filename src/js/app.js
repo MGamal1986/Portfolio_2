@@ -19,6 +19,16 @@ import '../scss/app.scss';
 // import nav bar
 import SideNav from './components/sideNav';
 SideNav();
+// select all sections buttons
+const mainSections = document.querySelectorAll('.section');
+const sectionsBtns = document.querySelectorAll('.btn-sections .sections');
+
+// import scroll component
+import {
+    Scroll
+} from './components/scroll';
+Scroll(mainSections, sectionsBtns);
+
 
 // import home component
 import Home from './components/home';
