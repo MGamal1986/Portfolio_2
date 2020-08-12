@@ -13,7 +13,6 @@ export class Sliding {
         this.options = _options;
     }
     slide() {
-        console.log(this.options.scroll);
         this.element.addEventListener('click', (event) => {
 
             if (!this.options.scroll) {
@@ -34,7 +33,6 @@ export class Sliding {
                     element.classList.remove(this.class);
                 })
                 this.element.classList.toggle(this.class);
-                this.block.classList.toggle(this.class);
                 window.scrollTo({
                     top: `${this.block.offsetTop - 40}`,
                     left: 0,

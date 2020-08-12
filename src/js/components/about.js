@@ -29,7 +29,7 @@ export default function About() {
         });
         // call slide function
         aboutSider.slide();
-
+        console.log('screen < 768px');
     } else {
         // create instance of sliding class
         let aboutSider = new Sliding(aboutBtn, aboutSection, 'slide', mainSections, sectionsBtn);

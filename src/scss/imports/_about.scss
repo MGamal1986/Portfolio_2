@@ -120,6 +120,12 @@
                 margin: 0;
             }
         }
+
+        @media screen and (max-width: 400px) {
+            &>*:not(:last-child) {
+                margin-bottom: 0.5rem !important;
+            }
+        }
     }
 
     &.slide {
