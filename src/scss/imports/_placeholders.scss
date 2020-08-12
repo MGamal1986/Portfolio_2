@@ -34,7 +34,6 @@
         transform: translate(-50%, 0);
         width: 80%;
         height: auto;
-        // height: 80vh;
         opacity: 1;
         margin-bottom: 5rem;
     }
@@ -42,7 +41,9 @@
 
 // animation classes 
 .animate {
-    animation: scaling 0.5s linear 0.5s 1;
+    // transform: scale(0.8) !important;
+    animation: scaling 0.7s linear 1;
+    animation-fill-mode: forwards;
 
     @keyframes scaling {
         0% {
